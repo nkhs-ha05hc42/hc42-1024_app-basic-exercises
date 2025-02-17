@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="9-8-4.mjs"></script>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 300px;
+      }
+      th, td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+      }
+      #update-button, #one-record-load-button {
+        margin-top: 10px;
+        padding: 5px 20px;
+        display: block;
+      }
+      .input-container {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="target-id-form">
+    <div class="input-container">
+      <label for="target-id">対象のID</label>
+      <input type="number" id="target-id" name="id" />
+    </div>
+    <button id="one-record-load-button" type="button">対象の読み込み</button>
+  </form>
+
+    <form id="input-form">
+      <table>
+        <tr>
+          <th>ID</th>
+          <td><input type="number" name="id" disabled /></td>
+        </tr>
+        <tr>
+          <th>UserID</th>
+          <td><input type="number" name="userid" /></td>
+        </tr>
+        <tr>
+          <th>Year</th>
+          <td><input type="number" name="year" /></td>
+        </tr>
+        <tr>
+          <th>Month</th>
+          <td><input type="number" name="month" /></td>
+        </tr>
+        <tr>
+          <th>Day</th>
+          <td><input type="number" name="day" /></td>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+          <th>Score</th>
+          <td><input type="number" name="score" /></td>
+        </tr>
+      </table>
+    </form>
+    <button id="update-button" type="button">更新</button>
+  </body>
+</html>
